@@ -37,7 +37,7 @@
                The width should match the with of the card
                The scaleType should be set to centerCrop-->
         <ImageView
-            android:id="@+id/item_dog_image"
+            android:id="@+id/vh_item_dog_image"
             android:layout_width="0dp"
             android:layout_height="194dp"
             android:scaleType="centerCrop"
@@ -52,12 +52,13 @@
                 The dog's hobbies-->
 
         <TextView
-            android:id="@+id/item_dog_name"
+            android:id="@+id/vh_item_dog_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
-            app:layout_constraintTop_toBottomOf="@id/item_dog_image"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintTop_toBottomOf="@id/vh_item_dog_image"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -65,16 +66,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="@id/item_dog_name"
-            app:layout_constraintTop_toBottomOf="@id/item_dog_name"
-            app:layout_constraintBottom_toBottomOf="@id/item_dog_hobbies"/>
+            android:textAppearance="?attr/textAppearanceBody1"
+            app:layout_constraintStart_toStartOf="@id/vh_item_dog_name"
+            app:layout_constraintTop_toBottomOf="@id/vh_item_dog_name"
+            app:layout_constraintBottom_toBottomOf="@id/vh_item_dog_hobbies"/>
 
         <TextView
-            android:id="@+id/item_dog_hobbies"
+            android:id="@+id/vh_item_dog_hobbies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
+            android:textAppearance="?attr/textAppearanceBody1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
